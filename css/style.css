@@ -896,9 +896,6 @@ background: linear-gradient(#fafafa, #e5e5e5);
 
 }
 
-	.folioContent {
-	/*	max-width: 250px;*/
-	}
 
 
 		#infoHeader {
@@ -910,7 +907,14 @@ background: linear-gradient(#fafafa, #e5e5e5);
 
 /*****************/
 
-
+@media screen and (max-width:360px) {
+	.folioContent .imgThumb {
+		margin: 10px;
+		border: 6px solid #fff;
+		width:87%;
+		text-align: center;
+	}
+}
 
 
 
