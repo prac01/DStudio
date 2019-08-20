@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DesignStudio</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<!-- <script type="text/javascript" src="js/script.js"></script> -->
 
@@ -52,7 +53,7 @@
 	
 <!--BILLBOARD-->
 	<div class="banner">
-		<div class="banner-items">
+		<div class="banner-items" data-aos="fade-up">
 			<img src="img/items.png">
 		</div>
 	</div>
@@ -66,7 +67,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim a nisl tempor vulputate. consectetur mattis cursus. Sed a nulla non elit pharetra lacinia. Curabitur venenatis leo ipsum, vestibulum tortor ultrices et. Pellentesque tincidunt metus in felis auctor viverra.</p>
 		</div>		
 		<div class="category">		
-			<ul>
+			<ul class="wrapCategory" data-aos="fade-down">
 				<li><img class="catIcon" src="img/featured/webdesign.png"/><h4>Web Design</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, velit at bibendum sollicitudin, ante odio</p></li>
 				
 				<li><img class="catIcon" src="img/featured/illustration.png"/><h4>Illustration</h4><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, velit at bibendum sollicitudin, ante odio</p></li>
@@ -143,14 +144,15 @@
 				
 				</div>
 			<div class="clearFix"></div>
-		</div>
-	
+		</div>	
 	</div>
-	
-	
+		
 <footer>	
 	<div class="veryFooter">Copyright 2013 <strong>DesignStudio</strong> </div>	
 </footer>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
