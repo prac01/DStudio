@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DesignStudio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="js/script.js"></script> -->
+
+	<!---fancybox Area-->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+<!---fancybox Area-->
+
+</head>
+<body>
+	<header>
+		<div class="rightHeader">
+			<img src="img/logo.png" />
+		</div>	
+		<div class="leftHeader">
+			<div class="leftInside">
+				<div id="emailIcon"><img src="img/icons/envelop.png" /></div>
+				<div id="callUs">Call us:</div>
+			</div>
+			
+			<div id="infoHeader">
+				<div id="infoEmail">info@designstudio.webatu.com</div>
+				<div id="phoneNumber">+8500(123456)</div>
+			</div>		
+		</div>
+	</header>
+
+	<nav>
+		<div class="handle"><span style="color:#848484;">Design</span>Studio<div class="menuRight"></div> </div>
+		<ul class="showing">
+			<a href="#"><li><div id="wala"><img src="img/icons/home.png" class="navIcon" /></div>Home</li></a><a href="#"><li><div id="wala"><img src="img/icons/about.png" class="navIcon"/></div>About Us</li></a><a href="#"><li><div id="wala"><img src="img/icons/services.png" class="navIcon"/></div>Services</li></a><a href="#"><li><div id="wala"><img src="img/icons/career.png" class="navIcon"/></div>Career</li></a><a href="#"><li><div id="wala"><img src="img/icons/events.png" class="navIcon" /></div>Events</li></a><a href="#"><li><div id="wala"><img src="img/icons/contact.png" class="navIcon" /></div>Contact Us</li></a>
+		</ul>
+	</nav>
+
+	<script>
+		jQuery(document).ready(function() {			
+			jQuery(".menuRight").click(function() {
+				
+				jQuery("nav ul").slideToggle(400, function() {
+					jQuery(this).toggleClass("showing").css('display', '');
+				});			
+			});		
+		});
+	</script>
+	
+<!--BILLBOARD-->
+	<div class="banner">
+		<div class="banner-items">
+			<img src="img/items.png">
+		</div>
+	</div>
+<!--BILLBOARD-->
+
+<!--SERVICES-->
+	<div class="services">
+		<div class="featured">
+			<span class="featureTitle">Featured Products and Services</span>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim a nisl tempor vulputate. consectetur mattis cursus. Sed a nulla non elit pharetra lacinia. Curabitur venenatis leo ipsum, vestibulum tortor ultrices et. Pellentesque tincidunt metus in felis auctor viverra.</p>
+		</div>		
+		<div class="category">		
+			<ul>
+				<li><img class="catIcon" src="img/featured/webdesign.png"/><h4>Web Design</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, velit at bibendum sollicitudin, ante odio</p></li>
+				
+				<li><img class="catIcon" src="img/featured/illustration.png"/><h4>Illustration</h4><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, velit at bibendum sollicitudin, ante odio</p></li>
+				
+				<li><img class="catIcon" src="img/featured/socialMedia.png"/><h4>Social Media</h4><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, velit at bibendum sollicitudin, ante odio</p></li>
+				
+				<li><img class="catIcon" src="img/featured/brand.png"/><h4>Brand Identity</h4><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, velit at bibendum sollicitudin, ante odio</p></li>
+			</ul>
+			<div class="clearCat"></div>
+		</div>		
+	</div>
+
+<!--PORTFOLIO-->
+<div class="work">
+	<div class="latestWork">Latest Work</div>
+</div>
+	<div class="folio">
+		<div class="folioContent">
+			<a class="fancybox" rel="some-folio" href="img/folio/folio1.png"><img src="img/folio/folio1.png" class="imgThumb"/></a>
+			<a class="fancybox" rel="some-folio" href="img/folio/folio2.png"><img src="img/folio/folio2.png" class="imgThumb" /></a>
+			<a class="fancybox" rel="some-folio" href="img/folio/folio3.png"><img src="img/folio/folio3.png" class="imgThumb" /></a>
+			<a class="fancybox" rel="some-folio" href="img/folio/folio4.png"><img src="img/folio/folio4.png" class="imgThumb" /></a>
+			<a class="fancybox" rel="some-folio" href="img/folio/folio5.png"><img src="img/folio/folio5.png" class="imgThumb" /></a>
+			<a class="fancybox" rel="some-folio" href="img/folio/folio6.png"><img src="img/folio/folio6.png" class="imgThumb" /></a>					
+		</div>
+	<div>
+		
+<!--fancybox-->	
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".fancybox").fancybox();
+	});	
+</script>
+
+<!--PORTFOLIO-->
+
+	<div class="midFooter">	
+		<div class="midFooterWrap">
+		
+				<div class="aboutSec"><h4>About Us <img src="img/icons/aboutSec.png" class="midFooterIcons" /></h4><p>Lorem ipsum dolor sit amet, consectetur 
+					adipiscing elit. Aliquam euismod massa ut 
+					ipsum porta faucibus. Pellentesque feugiat 
+					libero in urna fermentum, non pulvinar risus 
+					tempor. Cras laoreet neque suscipit, euismod 
+					orci nec, maximus sem. </p>
+				
+				<p>Cras eget dui vitae sem pharetra aliquet at 
+	sed arcu.  Maecenas porta venenatis tellus a 
+	pretium. Maecenas vel eros pulvinar, finibus 
+	lorem non, luctus nunc. Nulla pulvinar ornare 
+	eros, eu scelerisque magna placerat ut.  </p></div>
+				
+				<div class="socialSec"><h4>Social Media <img src="img/icons/social.png" class="midFooterIcons" /></h4>				
+					<ul>
+						<li><img src="img/icons/fb.png" /><a href="#">Facebook</a></li>
+						<li><img src="img/icons/gmail.png" /><a href="#">Google+</a></li>
+						<li><img src="img/icons/twitter.png" /><a href="#">Twitter</a></li>
+						<li><img src="img/icons/pininterest.png" /><a href="#">Pinterest</a></li>
+					</ul>
+				</div>
+				
+				<div class="newsSec"><h4>Newsletter <img src="img/icons/newsletter.png" class="midFooterIcons" /></h4><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti.</p>
+				
+				<form action="" method="POST">
+
+				<div id="email"> 				
+					<input type="text" name="email" class="emailForm" onfocus="if(this.value==this.defaultValue)this.value=''"    
+	onblur="if(this.value=='')this.value=this.defaultValue" 
+	value="Your email here.." { this.value = 'Email'; this.style.color = '#666';} />
+					
+				</div><img src="img/icons/emailForm.png" class="emailImg" />	
+
+	</form>
+				
+				</div>
+			<div class="clearFix"></div>
+		</div>
+	
+	</div>
+	
+	
+<footer>	
+	<div class="veryFooter">Copyright 2013 <strong>DesignStudio</strong> </div>	
+</footer>
+
+</body>
+</html>
